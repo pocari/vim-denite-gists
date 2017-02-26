@@ -40,7 +40,11 @@ class Source(Base):
         if arg:
             user_name = arg
         else:
-            user_name = util.input(self.vim, context, 'Gist User: ')
+            u = self.vim.call('denite_gists#util#github_user')
+            if u:
+                user_name = u
+            else:
+                user_name = util.input(self.vim, context, 'Gist User: ')
 
         return GIST_BASE_URL.format(user_name)
 
