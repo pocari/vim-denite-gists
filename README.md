@@ -4,6 +4,8 @@
 
 This plugin can open gist page with Denite interface.
 
+![vim-denite-gists-screenshot](https://cloud.githubusercontent.com/assets/1496543/23336842/1fbe0a0a-fc1f-11e6-9d32-10ad6c4797c6.gif)
+
 ## depends
 
 This plugin depends on:
