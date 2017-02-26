@@ -28,6 +28,7 @@ or
 `:Denite gists:[github user name]`
 
 Default Action is `open` with `open-browser.vim`.
+
 You can choose multiple candidates, and you can open them by multiple browser tab.
 
 ## github user detection
