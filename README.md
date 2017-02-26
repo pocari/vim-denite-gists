@@ -27,6 +27,9 @@ For [dein.vim](https://github.com/Shougo/dein.vim)
 or
 `:Denite gists:[github user name]`
 
+Default Action is `open` with `open-browser.vim`.
+You can choose multiple candidates, and you can open them by multiple browser tab.
+
 ## github user detection
 
 1. argument on startup
