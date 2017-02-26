@@ -27,3 +27,23 @@ For [dein.vim](https://github.com/Shougo/dein.vim)
 or
 `:Denite gists:[github user name]`
 
+## github user detection
+
+1. argument on startup
+
+    Denite gists:pocari
+
+2. from your .gitconfig
+   
+    if following section exists in your gitconfig, it is used.
+    
+    e.g) ~/.gitconfig
+    ```
+    [github]
+    	user = pocari
+    ```
+
+3. no argument and no github section in gitconfig
+    
+    A prompt for entering the user name is displayed at startup.
+
