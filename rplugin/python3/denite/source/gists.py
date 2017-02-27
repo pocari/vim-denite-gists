@@ -19,7 +19,7 @@ class Source(Base):
     def __init__(self, vim):
         super().__init__(vim)
         self.name = 'gists'
-        self.kind = 'browser'
+        self.kind = 'open_browser'
 
 
     def gather_candidates(self, context):

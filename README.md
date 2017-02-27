@@ -11,6 +11,7 @@ This plugin can open gist page with Denite interface.
 This plugin depends on:
 
 * [denite.nvim](https://github.com/Shougo/denite.nvim)
+* [vim-denite-kind-open-browser](https://github.com/pocari/vim-denite-kind-open-browser)
 * [open-browser.vim](https://github.com/tyru/open-browser)
 
 ## install
@@ -20,6 +21,7 @@ For [dein.vim](https://github.com/Shougo/dein.vim)
    ```
    call dein#add('Shougo/denite-nvim')
    call dein#add('tyru/open-browser.vim')
+   call dein#add('pocari/vim-denite-kind-open-browser')
    call dein#add('pocari/vim-denite-gists')
    ```
 
