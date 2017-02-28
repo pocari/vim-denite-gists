@@ -55,3 +55,21 @@ You can choose multiple candidates, and you can open them by multiple browser ta
     
     A prompt for entering the user name is displayed at startup.
 
+## Tips
+
+### resume
+
+`:Denite gists` is slow because it uses web API call.
+So, if you know that `gist` contents are not changed, you can run like this.
+
+```
+Denite gists -buffer-name=gists -resume
+```
+
+And, when you want to refresh,
+
+```
+Denite gists -buffer-name=gists -resume -refresh
+```
+
+
