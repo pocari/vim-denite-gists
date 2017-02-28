@@ -18,8 +18,8 @@ This plugin depends on:
 
 For [dein.vim](https://github.com/Shougo/dein.vim)
 
-   ```
-   call dein#add('Shougo/denite-nvim')
+   ```vim
+   call dein#add('Shougo/denite.nvim')
    call dein#add('tyru/open-browser.vim')
    call dein#add('pocari/vim-denite-kind-open-browser')
    call dein#add('pocari/vim-denite-gists')
