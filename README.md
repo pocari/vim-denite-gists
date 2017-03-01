@@ -1,4 +1,5 @@
 # vim-denite-gists
+[![wercker status](https://app.wercker.com/status/7a58aecc6f45b93472161196c3cc9464/s/master "wercker status")](https://app.wercker.com/project/byKey/7a58aecc6f45b93472161196c3cc9464)
 
 `vim-denite-gists` is a source for [denite.nvim](https://github.com/Shougo/denite.nvim).
 
