@@ -36,8 +36,7 @@ build:
     #     python_location: /usr/bin/python3.2
 
     # A step that executes `pip install` command.
-    - pip-install:
-        package_list: "pep8"
+    - pip-install
 
     # # This pip-install clears the local wheel cache
     # - pip-install:
