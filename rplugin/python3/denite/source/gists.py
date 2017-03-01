@@ -63,4 +63,3 @@ class Source(Base):
             ),
             "url": gist_info["html_url"]
         }
-
