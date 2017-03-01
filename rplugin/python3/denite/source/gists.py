@@ -21,7 +21,6 @@ class Source(Base):
         self.name = 'gists'
         self.kind = 'open_browser'
 
-
     def gather_candidates(self, context):
         gists_url = self._build_url(context)
         params = {
@@ -32,7 +31,6 @@ class Source(Base):
         gists = self._get_gists(gists_url, params)
         if gists:
             return [self._convert(r) for r in gists]
-
 
     def _build_url(self, context):
         args = dict(enumerate(context['args']))
@@ -48,20 +46,20 @@ class Source(Base):
 
         return GIST_BASE_URL.format(user_name)
 
-
     def _get_gists(self, url, params):
         encoded_params = urllib.parse.urlencode(params)
         url = "{}?{}".format(url, encoded_params)
         try:
-          with urllib.request.urlopen(url) as res:
-              return json.loads(res.read().decode("utf-8"))
+            with urllib.request.urlopen(url) as res:
+                return json.loads(res.read().decode("utf-8"))
         except urllib.error.HTTPError as e:
             util.error(self.vim, "Error {} api url:{}".format(e.reason, url))
 
-
     def _convert(self, gist_info):
         return {
-            "word": "{} ({})".format(gist_info["description"], gist_info["updated_at"]),
+            "word": "{} ({})".format(
+                gist_info["description"],
+                gist_info["updated_at"]
+            ),
             "url": gist_info["html_url"]
         }
-
