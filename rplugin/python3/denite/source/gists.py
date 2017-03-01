@@ -46,7 +46,6 @@ class Source(Base):
         if encoded_params:
             url = '{}?{}'.format(url, encoded_params)
 
-        util.debug(self.vim, url)
         return url
 
     def _detect_github_user(self, args):
